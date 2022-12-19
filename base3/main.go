@@ -7,14 +7,6 @@ import (
 )
 
 func main() {
-	// map study
-	var countryCapitalMap map[string]string
-	countryCapitalMap["1"] = "2"
-
-	for i, i2 := range countryCapitalMap {
-		fmt.Println(i)
-		fmt.Println(i2)
-	}
 
 	r := gee.New()
 	r.GET("/", func(w http.ResponseWriter, req *http.Request) {
